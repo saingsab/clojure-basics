@@ -1,4 +1,6 @@
-(ns b03-variables-scope.problems)
+(ns b03-variables-scope.problems
+  (:require [clojure.string :as str])
+  (:import [java.io Reader Writer]))
 
 (def x 1)
 
@@ -18,3 +20,4 @@
 (defn double-values [mp]
   (into {} (map (fn [[k v]]
                   [k (* 2 v)]) mp)))
+
